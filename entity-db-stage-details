@@ -1,0 +1,145 @@
+==============================
+##stage-mysql-entity-preprod##
+==============================
+mysql  -ugaurav -p -h stage-catalog-instance-1.cxowmtrnfita.ap-south-1.rds.amazonaws.com
+user: gaurav
+pass: mjGm4E@jfjdj
+
+Stage Aurora
+Host Writer: stage-catalog.cluster-cxowmtrnfita.ap-south-1.rds.amazonaws.com
+Host: Reader: stage-catalog.cluster-ro-cxowmtrnfita.ap-south-1.rds.amazonaws.com
+
+#############################################################################################################################################
+##application user entity db stage##
+user:entitydemo
+pass: Msy7fJNsbh&
+
+user: aurorareadonly
+pass: LkGm4ESui5n
+
+uer: entityreadonly
+pass: HslhyVkdBdKld
+
+user: entitypreprod
+pass: Msy7fJNsbh&
+
+user: narendra
+pass: dIeyEzwkooQCYQ
+
+user: entitystage
+pass: sNfnmsjpIkN
+
+user: entityproduct
+pass: sNfnmsjpIkN
+
+user: entitytest
+pass: msjTpIkNsjsy
+
+user: entitytestqa
+pass: 8JmsNsh4JmsN
+
+user: entityadhoc
+pass: mshYlNmsju7
+
+user: entitywaf
+pass: Jsy6NfpIJs4u
+
+user: entitybox
+pass: mjsytJfpI$sj
+
+user: entityclient
+pass: Hst#ytJkj8
+
+user: entityautomation
+pass: ksyt&ytJMsj
+
+user: entitymobile
+pass: Ms87ytJmsu
+
+user: entitydev
+pass: Ms87ytJmsu
+
+user: entitytwo
+pass: DgayJ7JLsa8
+
+user: entitythree
+pass: Ksy7JNsj7s
+
+user: entityfour
+pass: DWzSdOKwPYlx5g
+
+user: entityfive
+pass: Ba4NfpIkvJg
+
+user: entitysix
+pass: KMsjyNDmuTy
+
+user: entityseven
+pass: SmjtfJNsbs5s
+
+user: entitygmac
+pass: 4JmsNfpIkNsh
+
+#############################################################################################################################################
+GRANT ALL PRIVILEGES ON entity_four.* TO 'entityfour'@'%' IDENTIFIED BY 'DWzSdOKwPYlx5g';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, LOCK TABLES ON `entity\_four`.* TO 'entityfour'@'%' IDENTIFIED BY 'DWzSdOKwPYlx5g';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, LOCK TABLES ON `entity\_four`.* TO 'narendra'@'%' IDENTIFIED BY 'dIeyEzwkooQCYQ';
+GRANT SELECT, INSERT, UPDATE, DELETE ON `entity_peprod`.* TO 'tester'@'10.0.%';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_five`.* TO 'entityfive'@'10.0.%' IDENTIFIED BY 'Ba4NfpIkvJg';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_gmac`.* TO 'entitygmac'@'10.0.%' IDENTIFIED BY '4JmsNfpIkNsh';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_stage`.* TO 'entitystage'@'10.0.%' IDENTIFIED BY 'sNfnmsjpIkN';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_product`.* TO 'entityproduct'@'10.0.%' IDENTIFIED BY 'sNfnmsjpIkN';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_test`.* TO 'entitytest'@'10.0.%' IDENTIFIED BY 'msjTpIkNsjsy';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_testqa`.* TO 'entitytestqa'@'10.0.%' IDENTIFIED BY '8JmsNsh4JmsN';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_adhoc`.* TO 'entityadhoc'@'10.0.%' IDENTIFIED BY 'mshYlNmsju7';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_waf`.* TO 'entitywaf'@'10.0.%' IDENTIFIED BY 'Jsy6NfpIJs4u';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_box`.* TO 'entitybox'@'10.0.%' IDENTIFIED BY 'mjsytJfpI$sj';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_client`.* TO 'entityclient'@'10.0.%' IDENTIFIED BY 'Hst#ytJkj8';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_automation`.* TO 'entityautomation'@'10.0.%' IDENTIFIED BY 'ksyt&ytJMsj';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_mobile`.* TO 'entitymobile'@'10.0.%' IDENTIFIED BY 'Ms87ytJmsu';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_dev`.* TO 'entitydev'@'10.0.%' IDENTIFIED BY 'Ms87ytJmsu';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_two`.* TO 'entitytwo'@'10.0.%' IDENTIFIED BY 'DgayJ7JLsa8';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_three`.* TO 'entitythree'@'10.0.%' IDENTIFIED BY 'Ksy7JNsj7s';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_four`.* TO 'entityfour'@'10.0.%' IDENTIFIED BY 'MsjuNsjBs7v4';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_six`.* TO 'entitysix'@'10.0.%' IDENTIFIED BY 'KMsjyNDmuTy';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_seven`.* TO 'entityseven'@'10.0.%' IDENTIFIED BY 'SmjtfJNsbs5s';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE ON `entity_preprod`.* TO 'entitypreprod'@'10.0.%' IDENTIFIED BY 'Msy7fJNsbh&';
+
+#############################################################################################################################################
+##other user creation entity db stage
+ssh tunnel
+SSH Details
+Host : 52.66.76.76
+Port  : 1022
+SSH user : npfdbteam.s
+Psss : m3p/zUIvtEKi+Q
+
+##entity rds end point url:
+Host:stage-catalog-instance-1.cxowmtrnfita.ap-south-1.rds.amazonaws.com
+
+username: vijayg
+pwd: VGh536kd>1
+
+User: haripal
+Pass: Ea4NfpIkdesg
+
+user:saurabhg
+pwd: V$h536kHjT
+
+CREATE USER 'USERNAME'@'%' IDENTIFIED BY 'PASSWORD';
+SHOW GRANTS;
+GRANT SELECT ON 'db_name.*' TO 'user_name'@'10.0.%';
+
+create user 'vijayg'@'10.0.3.5' identified by 'VGh536kd>1';
+GRANT SELECT, INSERT, UPDATE, DELETE, LOCK TABLES, EXECUTE ON `entity_client`.* TO 'vijayg'@'10.0.3.5';	//Lock Tables will give export 
+GRANT SELECT ON *.* TO 'vijayg'@'10.0.3.5';
+
+create user 'saurabhg'@'10.0.3.5' identified by 'V$h536kHjT';
+GRANT SELECT, INSERT, UPDATE, DELETE, LOCK TABLES, EXECUTE ON `entity_stage`.* TO 'saurabhg'@'10.0.3.5';
+
+
+
+
+
+
+
